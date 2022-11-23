@@ -673,7 +673,7 @@ footer {
 	margin-bottom: 50px;
 }
 
-.filter_btn {
+.filter__btn {
 	padding: 6px 22px;
 
 	font-weight: 500;
@@ -688,8 +688,8 @@ footer {
 		box-shadow var(--anim-fast);
 }
 
-.filter_btn:hover,
-.filter_btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
 	color: var(--primari-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
