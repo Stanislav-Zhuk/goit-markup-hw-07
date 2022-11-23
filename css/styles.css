@@ -138,36 +138,37 @@ header {
 /* Logo */
 
 .logo {
-	margin-right: 93px;
-	margin-left: auto;
-
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1.2;
+	line-height: calc(31 / 26);
 
 	color: var(--accent-color);
 }
 
-.logo-header {
+.header__logo {
+	margin-right: 93px;
+}
+
+.header__logo--black {
 	color: var(--logo-black-color);
 }
 
 /* Navigation */
 
-.site-nav,
-.main-nav,
-.heder-nav {
+.header__nav,
+.nav,
+.nav__list {
 	display: flex;
 	align-items: center;
 }
 
-.site-nav .item:not(:last-child) {
+.nav__item:not(:last-child) {
 	margin-right: 50px;
 }
 
-.site-nav-link {
+.nav__link {
 	position: relative;
 
 	display: block;
@@ -175,19 +176,19 @@ header {
 	padding-bottom: 32px;
 
 	font-weight: 500;
-	line-height: 1.14;
+	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 
 	color: var(--primari-text-color);
 	transition: color var(--anim-fast);
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
 	color: var(--accent-color);
 }
 
-.site-nav-link::after {
+.nav__link::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -206,17 +207,17 @@ header {
 	transition: transform var(--anim-fast), opacity var(--anim-fast);
 }
 
-.site-nav-link:hover::after,
-.site-nav-link:focus::after {
+.nav__link:hover::after,
+.nav__link:focus::after {
 	transform: translateX(-50%) scaleX(1);
 	opacity: 1;
 }
 
-.current {
+.nav__link--current {
 	color: var(--accent-color);
 }
 
-.current::after {
+.nav__link--current::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -236,34 +237,34 @@ header {
 
 /* Contacts header */
 
-.contact-head {
+.header__contacts {
 	display: flex;
 	margin-left: auto;
 }
 
-.contact-head .item + .item {
-	margin-left: 50px;
+.contacts__item:not(:last-child) {
+	margin-right: 50px;
 }
 
-.contact-head-link {
+.contacts__link {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 
 	font-weight: 500;
-	line-height: 1.14;
+	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 
 	color: var(--secondary-text-color);
 	transition: color var(--anim-fast);
 }
 
-.contact-head-link:hover,
-.contact-head-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
 	color: var(--accent-color);
 }
 
-.contact-icons {
+.contact__icons {
 	fill: currentColor;
 }
 
@@ -650,19 +651,21 @@ footer {
 	fill: currentColor;
 }
 
-/* Portfolio */
+/* Portfolio header */
 
-.section-project {
-	background-color: var(--primari-white-color);
+.heder__project {
+	border-bottom: 1px solid #ececec;
 }
 
-.heder-project {
-	border-bottom: 1px solid #ececec;
+/* Portfolio */
+
+.portfolio__project {
+	background-color: var(--primari-white-color);
 }
 
 /* Filters */
 
-.portfolio {
+.portfolio__filter {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
@@ -670,30 +673,23 @@ footer {
 	margin-bottom: 50px;
 }
 
-.portfolio-button {
+.filter_btn {
 	padding: 6px 22px;
 
-	font-family: inherit;
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.6;
 	letter-spacing: 0.03em;
-
 	text-align: center;
 
+	color: var(--primari-text-color);
 	background-color: var(--bgd-white-color);
+	box-shadow: none;
 
 	transition: color var(--anim-fast), background-color var(--anim-fast),
 		box-shadow var(--anim-fast);
-
-	border: none;
-	border-radius: 4px;
-
-	cursor: pointer;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.filter_btn:hover,
+.filter_btn:focus {
 	color: var(--primari-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -702,7 +698,25 @@ footer {
 
 /* Projects */
 
-.project-title {
+.project__link {
+	transition: box-shadow var(--anim-fast);
+}
+
+.project__link:hover,
+.project__link:focus {
+	display: block;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__description {
+	padding: 20px 24px;
+
+	border: 1px solid #eeeeee;
+	border-top: none;
+}
+
+.description__title {
 	margin-bottom: 4px;
 
 	font-weight: 700;
@@ -714,37 +728,19 @@ footer {
 	color: var(--primari-text-color);
 }
 
-.project-text {
+.description__text {
 	font-size: 16px;
 	line-height: 1.87;
 
 	color: var(--secondary-text-color);
 }
 
-.card-border {
-	padding: 20px 24px;
-
-	border: 1px solid #eeeeee;
-	border-top: none;
-}
-
-.card-link {
-	transition: box-shadow var(--anim-fast);
-}
-
-.card-link:hover,
-.card-link:focus {
-	display: block;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-		1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.team-thumb {
+.project__thumb {
 	position: relative;
 	overflow: hidden;
 }
 
-.project-overlay {
+.thumb__overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -763,17 +759,17 @@ footer {
 	transition: transform var(--anim-fast);
 }
 
-.project-overlay-text {
+.project__link:hover .thumb__overlay,
+.project__link:focus .thumb__overlay {
+	transform: translateY(0);
+}
+
+.overlay__text {
 	font-size: 18px;
 	line-height: calc(28 / 18);
 	letter-spacing: 0.03em;
 
 	color: var(--primari-white-color);
-}
-
-.card-link:hover .project-overlay,
-.card-link:focus .project-overlay {
-	transform: translateY(0);
 }
 
 /* Modal window */

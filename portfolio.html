@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
-    <!-- Шрифти -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,31 +20,39 @@
 </head>
 
 <body>
-    <!-- Шапка -->
-    <header class="heder-project">
-        <div class="container heder-nav">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo link">
-                    Web<span class="logo-header">Studio</span>
+    <!-- Header -->
+    <header class="heder__project">
+        <!-- Navigation -->
+        <div class="container header__nav">
+            <nav class="nav">
+                <a href="./index.html" class="logo header__logo link">
+                    Web<span class="header__logo--black">Studio</span>
                 </a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="site-nav-link link">Студія</a></li>
-                    <li class="item"><a href="./portfolio.html" class="site-nav-link current link">Портфоліо</a></li>
-                    <li class="item"><a href="" class="site-nav-link link">Контакти</a></li>
+                <ul class="nav__list list">
+                    <li class="nav__item">
+                        <a class="nav__link link" href="./index.html">Студія</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--current link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link link" href="">Контакти</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="contact-head list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="contact-head-link link">
-                        <svg class="contact-icons" width="16" height="12">
+            <!-- Contacts -->
+            <ul class="header__contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link link" href="mailto:info@devstudio.com">
+                        <svg class="contact__icons" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="contact-head-link link">
-                        <svg class="contact-icons" width="10" height="16">
+                <li class="contacts__item">
+                    <a class="contacts__link link" href="tel:+380961111111">
+                        <svg class="contact__icons" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -53,28 +61,37 @@
             </ul>
         </div>
     </header>
-    <!-- Головна Портфоліо -->
     <main>
-        <!-- Проєкти Портфоліо-->
-        <section class="section section-project">
+        <!-- Portfolio -->
+        <section class="section portfolio__project">
             <div class="container">
                 <h1 class="visually-hidden">Проєкти</h1>
-                <!-- Кнопки -->
-                <ul class="portfolio list">
-                    <li><button type="button" class="portfolio-button">Усі</button></li>
-                    <li><button type="button" class="portfolio-button">Веб-сайти</button></li>
-                    <li><button type="button" class="portfolio-button">Додатки</button></li>
-                    <li><button type="button" class="portfolio-button">Дизайн</button></li>
-                    <li><button type="button" class="portfolio-button">Маркетинг</button></li>
+                <!-- Filters -->
+                <ul class="portfolio__filter list">
+                    <li class="filter__item">
+                        <button class="filter_btn button" type="button">Усі</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter_btn button" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter_btn button" type="button">Додатки</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter_btn button" type="button">Дизайн</button>
+                    </li>
+                    <li class="filter__item">
+                        <button class="filter_btn button" type="button">Маркетинг</button>
+                    </li>
                 </ul>
-                <!-- Проєкти -->
-                <ul class="project list card__set">
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                <!-- Projects -->
+                <ul class="project__list card__set list">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-1.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -82,18 +99,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Технокряк</h2>
-                                <p class="project-text">Веб-сайт</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Технокряк</h2>
+                                <p class="description__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-2.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -101,18 +118,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="project-text">Дизайн</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="description__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-3.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -120,18 +137,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Ресторан Seafood</h2>
-                                <p class="project-text">Додаток</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Ресторан Seafood</h2>
+                                <p class="description__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-4.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -139,18 +156,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Проєкт Prime</h2>
-                                <p class="project-text">Маркетинг</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Проєкт Prime</h2>
+                                <p class="description__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-5.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -158,18 +175,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Проєкт Boxes</h2>
-                                <p class="project-text">Додаток</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Проєкт Boxes</h2>
+                                <p class="description__text">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-6.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -177,18 +194,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Inspiration has no Borders</h2>
-                                <p class="project-text">Веб-сайт</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Inspiration has no Borders</h2>
+                                <p class="description__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-7.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -196,18 +213,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Видання Limited Edition</h2>
-                                <p class="project-text">Дизайн</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Видання Limited Edition</h2>
+                                <p class="description__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-8.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -215,18 +232,18 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Проєкт LAB</h2>
-                                <p class="project-text">Маркетинг</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Проєкт LAB</h2>
+                                <p class="description__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="project-card card__set-item">
-                        <a class="card-link link" href="">
-                            <div class="team-thumb">
+                    <li class="project__item card__set-item">
+                        <a class="project__link link" href="">
+                            <div class="project__thumb">
                                 <img src="./images/project-img-9.jpg" alt="Фото проєкту" width="370" height="294" />
-                                <div class="project-overlay">
-                                    <p class="project-overlay-text">
+                                <div class="thumb__overlay">
+                                    <p class="overlay__text">
                                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                                         Все
                                         це дозволить відвідувачу отримати
@@ -234,9 +251,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="card-border">
-                                <h2 class="project-title">Growing Business</h2>
-                                <p class="project-text">Додаток</p>
+                            <div class="project__description">
+                                <h2 class="description__title">Growing Business</h2>
+                                <p class="description__text">Додаток</p>
                             </div>
                         </a>
                     </li>
