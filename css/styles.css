@@ -665,7 +665,7 @@ footer {
 
 /* Filters */
 
-.portfolio__filter {
+.project__filter {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
