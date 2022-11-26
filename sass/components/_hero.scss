@@ -28,5 +28,7 @@
 }
 
 .hero__btn {
+  @extend %button;
+
   padding: 10px 32px;
 }

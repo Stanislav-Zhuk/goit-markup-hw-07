@@ -23,6 +23,8 @@
 }
 
 .filter__btn {
+  @extend %button;
+
   padding: 6px 22px;
 
   font-weight: 500;
@@ -35,29 +37,27 @@
 
   transition: color var(--anim-fast), background-color var(--anim-fast),
     box-shadow var(--anim-fast);
-}
 
-.filter__btn:hover,
-.filter__btn:focus {
-  color: var(--primari-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 // Projects
 
-/* Projects */
-
 .project__link {
   transition: box-shadow var(--anim-fast);
-}
 
-.project__link:hover,
-.project__link:focus {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project__description {

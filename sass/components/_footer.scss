@@ -32,14 +32,14 @@ footer {
   margin-bottom: 9px;
 
   font-style: normal;
-  line-height: 1.7;
+  line-height: calc(24 / 14);
 
   color: var(--primari-white-color);
 }
 
 .address__link {
   font-style: normal;
-  line-height: 1.7;
+  line-height: calc(24 / 14);
 
   color: var(--adress-footer-color);
   transition: color var(--anim-fast);
@@ -149,6 +149,8 @@ footer {
 }
 
 .subscription__btn {
+  @extend %button;
+
   display: flex;
   justify-content: center;
   align-items: center;
