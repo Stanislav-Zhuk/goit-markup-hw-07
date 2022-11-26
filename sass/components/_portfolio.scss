@@ -7,6 +7,8 @@
 // Portfolio
 
 .portfolio__project {
+  @include section();
+
   background-color: var(--primari-white-color);
 }
 

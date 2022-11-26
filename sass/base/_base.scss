@@ -14,9 +14,13 @@ body {
   margin-left: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
 }
 
 .button {
@@ -35,9 +39,10 @@ body {
   transition: background-color var(--anim-fast);
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-button-activ);
+  }
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--hero-button-activ);
-}

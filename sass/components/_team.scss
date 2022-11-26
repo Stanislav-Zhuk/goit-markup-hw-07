@@ -1,4 +1,6 @@
 .team {
+  @include section();
+  
   background-color: var(--bgd-white-color);
 
   text-align: center;

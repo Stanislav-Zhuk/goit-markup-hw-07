@@ -1,3 +1,7 @@
+.customers{
+  @include section();
+}
+
 .customers__list {
   display: flex;
   justify-content: center;
