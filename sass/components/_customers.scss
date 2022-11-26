@@ -21,13 +21,14 @@
 
   color: var(--main-svg-color);
   transition: color var(--anim-fast), border-color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
-.customers__link:hover,
-.customers__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
 
 .customers__icon {
   fill: currentColor;

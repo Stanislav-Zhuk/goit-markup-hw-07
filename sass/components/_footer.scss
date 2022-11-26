@@ -43,12 +43,13 @@ footer {
 
   color: var(--adress-footer-color);
   transition: color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    }
 }
 
-.address__link:hover,
-.address__link:focus {
-  color: var(--accent-color);
-}
 
 .address__link--mail {
   display: inline-block;
@@ -84,12 +85,12 @@ footer {
   color: var(--primari-white-color);
   background-color: rgba(255, 255, 255, 0.1);
   transition: color var(--anim-fast), background-color var(--anim-fast);
-}
 
-.join__link:hover,
-.join__link:focus {
-  color: var(--primari-white-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .join__icon {
@@ -136,15 +137,15 @@ footer {
   outline-offset: -1px;
 
   transition: outline var(--anim-fast);
-}
 
-.subscription__field:hover,
-.subscription__field:focus {
-  outline-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    outline-color: var(--accent-color);
+  }
 
-.subscription__field::placeholder {
-  color: var(--adress-footer-color);
+  &::placeholder {
+    color: var(--adress-footer-color);
+  }
 }
 
 .subscription__btn {

@@ -56,13 +56,15 @@
 
   color: var(--main-svg-color);
   transition: color var(--anim-fast), background-color var(--anim-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--primari-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
-.socials__link:hover,
-.socials__link:focus {
-  color: var(--primari-white-color);
-  background-color: var(--accent-color);
-}
+
 
 .socials__icon {
   fill: currentColor;

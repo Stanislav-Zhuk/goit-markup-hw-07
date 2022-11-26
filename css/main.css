@@ -418,9 +418,7 @@ header {
   -webkit-transition: color var(--anim-fast), background-color var(--anim-fast);
   transition: color var(--anim-fast), background-color var(--anim-fast);
 }
-
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
 }
@@ -465,9 +463,7 @@ header {
   -webkit-transition: color var(--anim-fast), border-color var(--anim-fast);
   transition: color var(--anim-fast), border-color var(--anim-fast);
 }
-
-.customers__link:hover,
-.customers__link:focus {
+.customers__link:hover, .customers__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -519,9 +515,7 @@ footer {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--accent-color);
 }
 
@@ -566,9 +560,7 @@ footer {
   -webkit-transition: color var(--anim-fast), background-color var(--anim-fast);
   transition: color var(--anim-fast), background-color var(--anim-fast);
 }
-
-.join__link:hover,
-.join__link:focus {
+.join__link:hover, .join__link:focus {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
 }
@@ -615,28 +607,21 @@ footer {
   -webkit-transition: outline var(--anim-fast);
   transition: outline var(--anim-fast);
 }
-
-.subscription__field:hover,
-.subscription__field:focus {
+.subscription__field:hover, .subscription__field:focus {
   outline-color: var(--accent-color);
 }
-
 .subscription__field::-webkit-input-placeholder {
   color: var(--adress-footer-color);
 }
-
 .subscription__field::-moz-placeholder {
   color: var(--adress-footer-color);
 }
-
 .subscription__field:-ms-input-placeholder {
   color: var(--adress-footer-color);
 }
-
 .subscription__field::-ms-input-placeholder {
   color: var(--adress-footer-color);
 }
-
 .subscription__field::placeholder {
   color: var(--adress-footer-color);
 }
