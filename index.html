@@ -26,7 +26,7 @@
 	<!-- Header -->
 	<header>
 		<!-- Navigation -->
-		<div class="container header__nav">
+		<!-- <div class="container header__nav">
 			<nav class="nav">
 				<a href="./index.html" class="logo header__logo link">
 					Web<span class="header__logo--black">Studio</span>
@@ -42,9 +42,9 @@
 						<a class="nav__link link" href="">Контакти</a>
 					</li>
 				</ul>
-			</nav>
-			<!-- Contacts -->
-			<ul class="header__contacts list">
+			</nav> -->
+		<!-- Contacts -->
+		<!-- <ul class="header__contacts list">
 				<li class="contacts__item">
 					<a class="contacts__link link" href="mailto:info@devstudio.com">
 						<svg class="contact__icons" width="16" height="12">
@@ -61,7 +61,7 @@
 						+38 096 111 11 11
 					</a>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 	</header>
 	<main>
@@ -133,22 +133,22 @@
 				<h2 class="section__title">Чим ми займаємося</h2>
 				<ul class="work__list list card__set">
 					<li class="work__item card__set-item">
-						<img class="work__img" src="./images/box1.jpg" alt="Приклад роботи команди студії" width="370"
-							height="294" />
+						<img class="work__img" srcset="./images/work/img_1_370.jpg 1x, ./images/work/img_1_740.jpg 2x"
+							src="./images/box1.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
 						<div class="work__overlay">
 							<p class="work__description">Десктопні додатки</p>
 						</div>
 					</li>
 					<li class="work__item card__set-item">
-						<img class="work__img" src="./images/box2.jpg" alt="Приклад роботи команди студії" width="370"
-							height="294" />
+						<img class="work__img" srcset="./images/work/img_2_370.jpg 1x, ./images/work/img_2_740.jpg 2x"
+							src="./images/box2.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
 						<div class="work__overlay">
 							<p class="work__description">Мобільні додатки</p>
 						</div>
 					</li>
 					<li class="work__item card__set-item">
-						<img class="work__img" src="./images/box3.jpg" alt="Приклад роботи команди студії" width="370"
-							height="294" />
+						<img class="work__img" srcset="./images/work/img_3_370.jpg 1x, ./images/work/img_3_740.jpg 2x"
+							src="./images/box3.jpg" alt="Приклад роботи команди студії" width="370" height="294" />
 						<div class="work__overlay">
 							<p class="work__description">Дизайнерські рішення</p>
 						</div>
@@ -162,7 +162,12 @@
 				<h2 class="section__title">Наша команда</h2>
 				<ul class="team__list card__set list">
 					<li class="team__member card__set-item">
-						<img src="./images/team-card-1.jpg" alt="фото співробітника" width="270" height="260" />
+						<img
+							srcset="./images/team/1-270.jpg 270w, ./images/team/1-354.jpg 354w, ./images/team/1-450.jpg 450w, ./images/team/1-540.jpg 540w, ./images/team/1-708.jpg 708w, ./images/team/1-900.jpg 900w,"
+							sizes="(min-width: 1200px) 270px, 
+		           (min-width: 768px) 354px, 
+		           (min-width: 480px) 450px, 100vw" src="./images/team-card-1.jpg" alt="фото співробітника" width="450"
+							height="460" />
 						<div class="member__description">
 							<h3 class="member__title">Ігор Дем'яненко</h3>
 							<p class="member__text">Product Designer</p>
@@ -203,7 +208,12 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img src="./images/team-card-2.jpg" alt="фото співробітника" width="270" height="260" />
+						<img
+							srcset="./images/team/2-270.jpg 270w, ./images/team/2-354.jpg 354w, ./images/team/2-450.jpg 450w, ./images/team/2-540.jpg 540w, ./images/team/2-708.jpg 708w, ./images/team/2-900.jpg 900w,"
+							sizes="(min-width: 1200px) 270px, 
+								           (min-width: 768px) 354px, 
+								           (min-width: 480px) 450px, 100vw" src="./images/team-card-2.jpg" alt="фото співробітника" width="450"
+							height="460" />
 						<div class="member__description">
 							<h3 class="member__title">Ольга Рєпіна</h3>
 							<p class="member__text">Frontend Developer</p>
@@ -244,7 +254,12 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img src="./images/team-card-3.jpg" alt="фото співробітника" width="270" height="260" />
+						<img
+							srcset="./images/team/3-270.jpg 270w, ./images/team/3-354.jpg 354w, ./images/team/3-450.jpg 450w, ./images/team/3-540.jpg 540w, ./images/team/3-708.jpg 708w, ./images/team/3-900.jpg 900w,"
+							sizes="(min-width: 1200px) 270px, 
+														           (min-width: 768px) 354px, 
+														           (min-width: 480px) 450px, 100vw" src="./images/team-card-3.jpg" alt="фото співробітника"
+							width="450" height="460" />
 						<div class="member__description">
 							<h3 class="member__title">Микола Тарасов</h3>
 							<p class="member__text">Marketing</p>
@@ -285,7 +300,12 @@
 						</div>
 					</li>
 					<li class="team__member card__set-item">
-						<img src="./images/team-card-4.jpg" alt="фото співробітника" width="270" height="260" />
+						<img
+							srcset="./images/team/4-270.jpg 270w, ./images/team/4-354.jpg 354w, ./images/team/4-450.jpg 450w, ./images/team/4-540.jpg 540w, ./images/team/4-708.jpg 708w, ./images/team/4-900.jpg 900w,"
+							sizes="(min-width: 1200px) 270px, 
+														           (min-width: 768px) 354px, 
+														           (min-width: 480px) 450px, 100vw" src="./images/team-card-4.jpg" alt="фото співробітника"
+							width="450" height="460" />
 						<div class="member__description">
 							<h3 class="member__title">Михайло Єрмаков</h3>
 							<p class="member__text">UI Designer</p>
@@ -332,43 +352,43 @@
 		<section class="customers">
 			<div class="container">
 				<h2 class="section__title">Постійні клієнти</h2>
-				<ul class="customers__list list">
-					<li class="customers__item">
+				<ul class="customers__list list card__set">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo1"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="customers__item">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo2"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="customers__item">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo3"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="customers__item">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo4"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="customers__item">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo5"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="customers__item">
+					<li class="customers__item card__set-item">
 						<a class="customers__link" href="">
 							<svg class="customers__icon" width="106" height="60">
 								<use href="./images/icons.svg#logo6"></use>
@@ -382,7 +402,7 @@
 	<!-- Footer -->
 	<footer>
 		<div class="container container__footer">
-			<div class="container__address">
+			<div class="container__address" id="contacts">
 				<a href="./index.html" class="logo footer__logo link">
 					Web<span class="footer__logo--white">Studio</span>
 				</a>

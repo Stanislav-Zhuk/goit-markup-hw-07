@@ -1,5 +1,14 @@
 .work {
+  display: none;
+
   @include section;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+
+    @include section(94px, 94px);
+  }
+
   background-color: var(--primari-white-color);
 }
 
